@@ -8,13 +8,19 @@
     "build": "tsc",
     "build:dev": "tsc --watch",
     "test": "node dist/js/analytics/__tests__",
-    "test:dev": "node --watch dist/js/analytics/__tests__"
+    "test:dev": "node --watch dist/js/analytics/__tests__",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+  "type": "module",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "husky": "^9.1.7",
+    "serve": "^14.2.4",
     "typescript": "^5.8.2"
   }
 }
